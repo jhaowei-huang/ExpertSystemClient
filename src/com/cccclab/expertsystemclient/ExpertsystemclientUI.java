@@ -25,6 +25,7 @@ public class ExpertsystemclientUI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		setContent(new ExpertSystemClientMain());
+//		setContent(new ThreeJs());
 
 	}
 }

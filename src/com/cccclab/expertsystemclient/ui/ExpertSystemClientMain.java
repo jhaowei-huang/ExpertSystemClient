@@ -3,6 +3,7 @@ package com.cccclab.expertsystemclient.ui;
 import com.cccclab.expertsystemclient.design.ExpertSystemClientMainDesign;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.MenuBar.Command;
 import com.vaadin.ui.MenuBar.MenuItem;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
@@ -22,7 +23,16 @@ public class ExpertSystemClientMain extends ExpertSystemClientMainDesign {
 		mi_edit.addItem("undo", null, null);
 		mi_edit.addItem("redo", null, null);
 		
-		MenuItem mi_src  = this.menu.addItem("Source", null);
+		MenuItem mi_simu  = this.menu.addItem("simulator", null);
+		mi_simu.setCommand(new Command() {
+
+			@Override
+			public void menuSelected(MenuItem selectedItem) {
+				
+				
+			}
+			
+		});
 		
 		this.leftMenu.addTab(new Button("Btn1-1"), "Tab 1");
 		this.leftMenu.addTab(new Button("Btn1-2"), "Tab 2");
